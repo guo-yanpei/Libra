@@ -43,4 +43,4 @@ python run.py
 
 use `sudo` if necessary.
 
-It will output prover time, verifier time and proof size of Libra PIOP for Merkle tree verification. Besides, it outputs polynomial variable number. Sum the cost of corresponding PCS to obtain overall cost for Libra SNARK.
+It will output prover time, verifier time and proof size of Libra PIOP for Merkle tree verification from $2^1$ leaves to $2^8$ leaves. Besides, it outputs polynomial variable number. Sum the cost of corresponding PCS to obtain overall cost for Libra SNARK.
