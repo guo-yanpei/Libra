@@ -150,7 +150,7 @@ void verifier::read_circuit(const char *path, const char *meta_path)
 			if(i == 1)
 				C.circuit[0].bit_length = cnt - 1;
 		}
-		fprintf(stderr, "layer %d, bit_length %d\n", i, C.circuit[i].bit_length);
+		// fprintf(stderr, "layer %d, bit_length %d\n", i, C.circuit[i].bit_length);
 		if(C.circuit[i].bit_length > max_bit_length)
 			max_bit_length = C.circuit[i].bit_length;
 	}

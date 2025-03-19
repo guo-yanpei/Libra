@@ -27,18 +27,20 @@ git submodule init && git submodule update
 
 The top-level Makefile in this directory will build everything below. Just run
 
-    cmake .
-    make -j4        # for example
+```
+cmake .
+make -j4        # for example
+```
 
 ## Testing
 
 ### SHA256
-    cd tests/SHA256
-    python build.py
-    python run.py
+```
+cd tests/SHA256
+python build.py
+python run.py
+```
 
 use `sudo` if necessary.
 
-## Known issue
-
-Due to optimizations to the system, we cannot process small witness(input). We will pad the input to appropriate size. This will slow down on small instances and produce different result compared to the paper. Large instance remains the same.
+It will output prover time, verifier time and proof size of Libra PIOP for Merkle tree verification. Besides, it outputs polynomial variable number. Sum the cost of corresponding PCS to obtain overall cost for Libra SNARK.
